@@ -1,0 +1,73 @@
+body {
+    font-family: 'Georgia', serif;
+    background: url('images/meditationgarden.jpeg') no-repeat center center fixed;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .enrollment-container {
+    background: rgba(255, 255, 255, 0.85);
+    padding: 2rem 3rem;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 500px;
+    backdrop-filter: blur(6px);
+  }
+  
+  form .step {
+    display: none;
+    animation: fadeIn 0.5s ease forwards;
+  }
+  
+  form .step.active {
+    display: block;
+  }
+  
+  h2 {
+    font-family: 'Papyrus', cursive;
+    color: #4e342e;
+  }
+  
+  input[type="text"],
+  input[type="email"] {
+    width: 100%;
+    padding: 0.8rem;
+    margin: 0.5rem 0 1rem;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+  }
+  
+  label {
+    display: block;
+    margin: 0.5rem 0;
+    font-size: 0.95rem;
+  }
+  
+  button {
+    background: #a1887f;
+    color: white;
+    border: none;
+    padding: 0.7rem 1.5rem;
+    font-size: 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 1rem;
+    transition: background 0.3s ease;
+  }
+  
+  button:hover {
+    background: #8d6e63;
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  

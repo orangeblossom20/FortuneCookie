@@ -1,0 +1,35 @@
+body {
+    font-family: 'Georgia', serif;
+    background: url('images/meditationgarden.jpeg') no-repeat center center fixed;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.cookie-container {
+    text-align: center;
+}
+
+#cookie {
+    width: 200px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+#cookie:hover {
+    transform: scale(1.1);
+}
+
+#quote {
+    margin-top: 20px;
+    padding: 15px;
+    background: rgba(255, 255, 255, 0.7);
+    border-radius: 10px;
+    display: inline-block;
+    font-size: 1.2em;
+    max-width: 300px;
+}

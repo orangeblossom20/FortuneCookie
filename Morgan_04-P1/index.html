@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Fortune Cookie Enrollment</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="enrollment-container">
+    <form id="enrollmentForm" novalidate>
+
+
+
+      <div class="step active">
+        <h2>Welcome to Fortune Jar 🍪</h2>
+        <p>Let's begin by creating your account.</p>
+        <input type="text" placeholder="Full Name" name="name" required />
+        <input type="email" placeholder="Email" name="email" required />
+        <button type="button" class="next">Next</button>
+      </div>
+
+
+      <div class="step">
+        <h2>Your Background</h2>
+        <p>Have you ever been to therapy?</p>
+        <label><input type="radio" name="therapy" value="yes" required /> Yes</label>
+        <label><input type="radio" name="therapy" value="no" required /> No</label>
+
+        <p>Have you ever seen a fortune teller?</p>
+        <label><input type="radio" name="fortune_teller" value="yes" required /> Yes</label>
+        <label><input type="radio" name="fortune_teller" value="no" required /> No</label>
+
+        <p>Do you believe in fate or free will?</p>
+        <label><input type="radio" name="belief" value="fate" required /> Fate</label>
+        <label><input type="radio" name="belief" value="free_will" required /> Free Will</label>
+
+        <p>Do you prefer mornings or nights?</p>
+        <label><input type="radio" name="time_pref" value="morning" required /> Morning</label>
+        <label><input type="radio" name="time_pref" value="night" required /> Night</label>
+
+        <p>What brings you peace?</p>
+        <input type="text" name="peace" placeholder="e.g., nature, music, silence" required />
+
+        <button type="button" class="next">Next</button>
+      </div>
+ 
+      <div class="step">
+        <h2>What matters to you?</h2>
+        <p>Select values that resonate with you:</p>
+        <label><input type="checkbox" name="values" value="Love" /> Love</label>
+        <label><input type="checkbox" name="values" value="Growth" /> Growth</label>
+        <label><input type="checkbox" name="values" value="Truth" /> Truth</label>
+        <label><input type="checkbox" name="values" value="Healing" /> Healing</label>
+        <label><input type="checkbox" name="values" value="Joy" /> Joy</label>
+        <label><input type="checkbox" name="values" value="Resilience" /> Resilience</label>
+
+        <button type="submit">Submit</button>
+      </div>
+    </form>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
